@@ -13,7 +13,11 @@ function init(container, color) {
   scene.add(light);
 
   const geometry = new THREE.CylinderGeometry(1, 1, 2, 64);
-  const material = new THREE.MeshStandardMaterial({ color });
+  const material = new THREE.MeshPhysicalMaterial({
+    color,
+    metalness: 0.3,
+    roughness: 0.3
+  });
   const can = new THREE.Mesh(geometry, material);
   scene.add(can);
 
@@ -22,6 +26,7 @@ function init(container, color) {
 
   function animate() {
     requestAnimationFrame(animate);
+    can.rotation.y += 0.01;
     renderer.render(scene, camera);
   }
 
