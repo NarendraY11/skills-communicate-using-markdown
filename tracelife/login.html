@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | TraceLife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="top-bar">Welcome back</div>
+    <header class="header">
+      <div class="logo"><a href="index.html">TraceLife</a></div>
+      <nav>
+        <a href="shop.html">Shop</a>
+        <a href="subscription.html">Subscription</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#" data-cart-open>Cart</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <h1>Login</h1>
+      <form class="grid" style="max-width: 300px; margin: auto">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button class="btn" type="submit">Sign In</button>
+      </form>
+      <p style="text-align: center">No account? <a href="#">Sign up</a></p>
+    </section>
+
+    <footer class="footer">© 2024 TraceLife Beverages</footer>
+
+    <div id="cartDrawer" class="cart-drawer">
+      <button class="btn" data-cart-close>Close</button>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

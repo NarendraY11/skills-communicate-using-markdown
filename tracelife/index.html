@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TraceLife Beverages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="top-bar">Free shipping on orders over $30</div>
+    <header class="header">
+      <div class="logo"><a href="index.html">TraceLife</a></div>
+      <nav>
+        <a href="shop.html">Shop</a>
+        <a href="subscription.html">Subscription</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#" data-cart-open>Cart</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <video
+        autoplay
+        muted
+        loop
+        src="https://www.w3schools.com/howto/rain.mp4"
+      ></video>
+      <h1>Functional Wellness. Minimalist Luxury.</h1>
+    </section>
+
+    <section class="section">
+      <h2>Shop by Benefit</h2>
+      <div class="grid grid-2" data-benefit-cards></div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Build Your Bundle — Save 15%</h2>
+        <p>Create a mix of any flavors.</p>
+        <a class="btn" href="shop.html">Shop Bundles</a>
+      </div>
+    </section>
+
+    <section class="section email-capture">
+      <h2>Stay Updated</h2>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h2>As seen in</h2>
+      <p>★ ★ ★ ★ ★ Rated by customers</p>
+    </section>
+
+    <footer class="footer">© 2024 TraceLife Beverages</footer>
+
+    <div id="cartDrawer" class="cart-drawer">
+      <button class="btn" data-cart-close>Close</button>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
